@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camera Feed Example</title>
+</head>
+<body>
+    <h1>Camera Feed Example</h1>
+
+    <video id="videoElement" width="640" height="480" autoplay playsinline></video>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const videoElement = document.getElementById('videoElement');
+
+            // Function to set up camera feed
+            const setupCamera = async () => {
+                try {
+                    // Request access to the user's camera
+                    const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+
+                    // Set the obtained stream as the srcObject of the video element
+                    videoElement.srcObject = stream;
+                } catch (error) {
+                    console.error('Error accessing camera:', error);
+                }
+            };
+
+            // Call the setupCamera function to initiate camera access and video setup
+            setupCamera();
+        });
+    </script>
+</body>
+</html>
