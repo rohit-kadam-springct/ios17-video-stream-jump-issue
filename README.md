@@ -4,4 +4,4 @@ This repository contains a simple HTML file (`index.html`) that demonstrates the
 
 #### Link - https://rohit-kadam-springct.github.io/ios17-video-stream-jumping-issue
 
-#### Video ![Watch the video to observe the iOS 17 video jumping issue](https://rohit-kadam-springct.github.io/ios17-video-stream-jumping-issue/resources/ios17-video-stream-jumping-issue.mp4)
+#### Video [Watch the video to observe the iOS 17 video jumping issue](https://rohit-kadam-springct.github.io/ios17-video-stream-jumping-issue/resources/ios17-video-stream-jumping-issue.mp4)
